@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%@c712q2&r$6=6bzi_c^-6+zvau6e%i06ievdr%ug@e&$irf8k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'poc.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ProductDB',
-        'USER': 'manjoy',
-        'PASSWORD': 'assassin89',
+        'NAME': 'Productdb',
+        'USER': 'apiuser',
+        'PASSWORD': 'apiuser',
         'HOST': '127.0.0.1'
     }
 }

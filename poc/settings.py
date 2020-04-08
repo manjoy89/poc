@@ -81,7 +81,8 @@ DATABASES = {
         'NAME': 'Productdb',
         'USER': 'apiuser',
         'PASSWORD': 'apiuser',
-        'HOST': '127.0.0.1'
+        'HOST': 'localhost',
+        'POST': ''
     }
 }
 

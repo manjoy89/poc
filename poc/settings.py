@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%@c712q2&r$6=6bzi_c^-6+zvau6e%i06ievdr%ug@e&$irf8k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['3.133.140.162']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,11 +78,10 @@ WSGI_APPLICATION = 'poc.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Productdb',
+        'NAME': 'productdb',
         'USER': 'apiuser',
         'PASSWORD': 'apiuser',
-        'HOST': 'localhost',
-        'POST': ''
+        'HOST': 'localhost'
     }
 }
 
@@ -124,3 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
